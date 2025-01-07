@@ -7,9 +7,8 @@ Backend Development: As a part of the project, we will learn to set up robust se
 
 ### Milestone 1: Project Overview
 
+The MERN stack is a popular way to build web apps. It’s great because it uses just one language—JavaScript—for everything, making it easier for developers to work on both the front-end (what users see) and the back-end (how things work behind the scenes).
 
-The MERN stack is a popular set of technologies used for building full-stack web applications.The MERN stack is favored for its JavaScript-only approach, enabling developers to use a single language across the entire application
+MongoDB is used instead of regular SQL databases because it can store a lot of data without needing it to be in a fixed structure, which makes it more flexible.
 
-Mongo DB is used instead of SQL so that a large amount of data can be stored without storing them in the structured format.
-
-We use REST API to handle the client and the server connection
+To connect the user interface and the server, we use REST APIs. These help send and receive data smoothly.
