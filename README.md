@@ -11,4 +11,15 @@ The MERN stack is a popular way to build web apps. It’s great because it uses 
 
 MongoDB is used instead of regular SQL databases because it can store a lot of data without needing it to be in a fixed structure, which makes it more flexible.
 
+<<<<<<< HEAD
 To connect the user interface and the server, we use REST APIs. These help send and receive data smoothly.
+=======
+Mongo DB is used instead of SQL so that a large amount of data can be stored without storing them in the structured format.
+
+We use REST API to handle the client and the server connection
+
+### Milestone 2: Login page
+
+1.Created login page using Tailwind CSS and React.
+2.Used routers
+>>>>>>> fd8ba41 (mile2)
