@@ -23,3 +23,19 @@ We use REST API to handle the client and the server connection
 1.Created login page using Tailwind CSS and React.
 2.Used routers
 >>>>>>> fd8ba41 (mile2)
+
+
+### Milestone 3: Project Setup for Backend
+
+This milestone focused on setting up the backend server for the ecommerce application. Key achievements include:
+
+Setting up a Node.js/Express server for the backend:
+Initialized a new Node.js project using npm init.
+Installed essential dependencies like express, dotenv, cors, and body-parser.
+Created the folder structure for the backend, including directories for routes, controllers, and models.
+Added environment variables for secure configuration using .env.
+Configured the server to handle API requests and send appropriate responses.
+Implemented basic routes to test the server functionality, such as:
+A root endpoint (/) that returns a welcome message.
+A /health endpoint to verify the server's status.
+Ensured the server is ready for future integrations, including database and authentication modules.
