@@ -39,3 +39,17 @@ Implemented basic routes to test the server functionality, such as:
 A root endpoint (/) that returns a welcome message.
 A /health endpoint to verify the server's status.
 Ensured the server is ready for future integrations, including database and authentication modules.
+
+
+### Milestone 5: Building a SignUp Page
+
+In this Milestone, we created the sign up page
+
+Here the input tag takes the input of the user to take inputs of
+User's first name
+Last Name
+Email
+Password
+Confirm Password
+We used react-router-dom and react-hook-form to do user validation. We also used regex and also watch to see whether both passwords match or not.
+In the handlePic function, we created a URL for the image the user added.
