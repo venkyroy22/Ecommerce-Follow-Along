@@ -41,6 +41,35 @@ A /health endpoint to verify the server's status.
 Ensured the server is ready for future integrations, including database and authentication modules.
 
 
+
+
+### Milestone 4: Creating User Model and Controller
+
+In this milestone, we focused on building and organizing the components necessary for user management and file uploads in our application. Below are the key steps and actions taken:
+
+Folder Structure Setup:
+
+Controllers Folder: Created a user.js file to handle the logic for user-related routes.
+Models Folder: Created a user.js file to define the User schema.
+Dependencies Installation:
+
+Installed bcryptjs for password hashing to ensure secure storage of user credentials.
+Installed multer to manage file uploads efficiently.
+User Schema Creation:
+
+In models/user.js, defined a User schema using Mongoose. The schema includes essential fields for user information, such as name, email, password, and other attributes.
+Controller Implementation:
+
+In controllers/user.js, implemented a route to handle user creation. This route integrates:
+Password hashing using bcryptjs before saving user data.
+Validation and error handling to ensure data integrity.
+File Upload Management:
+
+Created a multer.js file to configure file upload settings:
+Configured storage options, including destination and filename customization.
+Added logic to generate unique filenames for uploaded files.
+
+
 ### Milestone 5: Building a SignUp Page
 
 In this Milestone, we created the sign up page
