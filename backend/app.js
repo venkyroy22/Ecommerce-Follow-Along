@@ -1,31 +1,29 @@
-const express = require("express");
+const express = require('express');
 const app = express();
-const ErrorHandler = require("./middleware/error");
+const ErrorHandler = require('./middleware/error');
 const cookieParser = require("cookie-parser");
-const bodyParser = require("body-parser");
+const bodyParser = require('body-parser');
+const cors = require('cors');
 
-
-
-
+// Middleware
 app.use(express.json());
-app.use(cookieParser());
-app.use("/",express.static("uploads"));
-app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
-// config
-if (process.env.NODE_ENV !== "PRODUCTION") {
+app.use(cookieParser()); // Invoke the cookieParser function
+app.use(cors()); // Add configuration if needed
+app.use("/", express.static("uploads")); // Serve static files
+app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
+
+// Environment variable configuration
+if (process.env.NODE_ENV !== 'PRODUCTION') {
     require("dotenv").config({
-      path: "backend/config/.env",
+        path: "backend/config/.env" // Ensure this path is correct
     });
-};
-//import Routes
-const user = require("./controller/user");
+}
 
-
+// Routes
+const user = require("./controllers/user");
 app.use("/api/v2/user", user);
 
-
-// it's for ErrorHandling
+// Error handling middleware
 app.use(ErrorHandler);
-
 
 module.exports = app;

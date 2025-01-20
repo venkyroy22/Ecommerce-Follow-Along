@@ -82,3 +82,26 @@ Password
 Confirm Password
 We used react-router-dom and react-hook-form to do user validation. We also used regex and also watch to see whether both passwords match or not.
 In the handlePic function, we created a URL for the image the user added.
+
+
+### Milestone 6:Connect
+
+In this milestone, we focused on securely handling user data, connecting the backend to the frontend, and managing user authentication. Below are the highlights of our progress:
+
+Data Encryption:
+
+Learned how to use bcrypt to encrypt user data, such as passwords, before saving them to the database.
+Ensured sensitive information is securely stored, minimizing risks of data breaches.
+Database Persistence:
+
+Implemented functionality to store user data in the database reliably.
+Ensured data consistency and prevented data loss during storage operations.
+Backend-Frontend Integration:
+
+Connected the frontend application to the backend, enabling seamless interaction between the two layers.
+Configured endpoints to handle user profile uploads from the frontend.
+Verified that user-uploaded profile images are correctly stored in the designated uploads folder on the server.
+Authentication and Data Management:
+
+Incorporated JSON Web Tokens (JWT) for managing user authentication and session handling.
+Ensured secure and efficient user authentication by generating and verifying tokens for login sessions.
