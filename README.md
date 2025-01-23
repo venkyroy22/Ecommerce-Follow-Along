@@ -11,9 +11,8 @@ The MERN stack is a popular way to build web apps. It’s great because it uses 
 
 MongoDB is used instead of regular SQL databases because it can store a lot of data without needing it to be in a fixed structure, which makes it more flexible.
 
-<<<<<<< HEAD
 To connect the user interface and the server, we use REST APIs. These help send and receive data smoothly.
-=======
+
 Mongo DB is used instead of SQL so that a large amount of data can be stored without storing them in the structured format.
 
 We use REST API to handle the client and the server connection
@@ -22,7 +21,6 @@ We use REST API to handle the client and the server connection
 
 1.Created login page using Tailwind CSS and React.
 2.Used routers
->>>>>>> fd8ba41 (mile2)
 
 
 ### Milestone 3: Project Setup for Backend
@@ -106,6 +104,19 @@ Authentication and Data Management:
 Incorporated JSON Web Tokens (JWT) for managing user authentication and session handling.
 Ensured secure and efficient user authentication by generating and verifying tokens for login sessions.
 
+### Milestone 7: MongoDB connection
+In this Milestone,
+
+ Understand how to validate user credentials during login.
+Learn how to compare the encrypted password with the user’s input.
+The user provides their email/username and password on the login page.
+The backend retrieves the user record based on the provided email/username.
+If the user is not found, return an error: "User does not exist."
+Process the user's input password using the same hashing algorithm (e.g., bcrypt).
+Compare the resulting hash to the stored hashed password.
+If they match, the user is authenticated; if not, send an error.
+
+
 ### Milestone 8: Home Page creation
 In this Milestone,
 
@@ -116,3 +127,6 @@ Array mapping to iterate over the product list and render a card for each produc
 Reusable card component with props for product details (e.g., name, image, price).
 A grid layout or flexbox for displaying multiple cards neatly.
 A home page with a route connecting to app.jsx.
+
+
+
