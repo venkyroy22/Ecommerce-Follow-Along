@@ -110,11 +110,11 @@ Ensured secure and efficient user authentication by generating and verifying tok
 Milestone 7: MongoDB connection
 In this Milestone,
 
-> Understand how to validate user credentials during login.
-> Learn how to compare the encrypted password with the user’s input.
-> The user provides their email/username and password on the login page.
-> The backend retrieves the user record based on the provided email/username.
-> If the user is not found, return an error: "User does not exist."
-> Process the user's input password using the same hashing algorithm (e.g., bcrypt).
-> Compare the resulting hash to the stored hashed password.
-> If they match, the user is authenticated; if not, send an error.
+ Understand how to validate user credentials during login.
+Learn how to compare the encrypted password with the user’s input.
+The user provides their email/username and password on the login page.
+The backend retrieves the user record based on the provided email/username.
+If the user is not found, return an error: "User does not exist."
+Process the user's input password using the same hashing algorithm (e.g., bcrypt).
+Compare the resulting hash to the stored hashed password.
+If they match, the user is authenticated; if not, send an error.
