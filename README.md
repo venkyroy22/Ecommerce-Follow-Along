@@ -128,5 +128,13 @@ Reusable card component with props for product details (e.g., name, image, price
 A grid layout or flexbox for displaying multiple cards neatly.
 A home page with a route connecting to app.jsx.
 
+### milestone Product Creation Page
+In this milestone, we:
+
+Learned to create a form to collect all product details.
+Implemented functionality to upload multiple images as input.
+Built the page using React JS and styled it with Tailwind CSS.
+Utilized useState to manage form inputs dynamically.
+Applied proper styling using Tailwind CSS for a responsive and modern UI.
 
 
