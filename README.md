@@ -128,7 +128,7 @@ Reusable card component with props for product details (e.g., name, image, price
 A grid layout or flexbox for displaying multiple cards neatly.
 A home page with a route connecting to app.jsx.
 
-### milestone Product Creation Page
+### Milestone 9: Product Creation Page
 In this milestone, we:
 
 Learned to create a form to collect all product details.
