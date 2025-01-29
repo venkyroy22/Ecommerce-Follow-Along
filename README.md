@@ -128,7 +128,7 @@ Reusable card component with props for product details (e.g., name, image, price
 A grid layout or flexbox for displaying multiple cards neatly.
 A home page with a route connecting to app.jsx.
 
-### milestone Product Creation Page
+### Milestone 9: Product Creation Page
 In this milestone, we:
 
 Learned to create a form to collect all product details.
@@ -136,5 +136,28 @@ Implemented functionality to upload multiple images as input.
 Built the page using React JS and styled it with Tailwind CSS.
 Utilized useState to manage form inputs dynamically.
 Applied proper styling using Tailwind CSS for a responsive and modern UI.
+
+
+### Milestone 10: Connecting to MongoDB
+
+In this milestone, I accomplished the following:
+
+Created a Product Schema using Mongoose
+
+Defined a schema to structure product data
+Included fields such as name, description, price, stock, category, and images
+Built a POST Endpoint for Product Data
+
+Developed an API endpoint to receive product details from the frontend
+Implemented validation for required fields before storing data
+Handled Image Uploads with Multer
+
+Configured Multer to handle file uploads
+Allowed users to upload up to ten images
+Stored images in a dedicated Product folder for better organization
+Integrated MongoDB for Persistent Storage
+
+Connected the backend to MongoDB using Mongoose
+Successfully stored validated product data, including image paths
 
 
