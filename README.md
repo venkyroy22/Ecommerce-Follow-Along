@@ -160,4 +160,23 @@ Integrated MongoDB for Persistent Storage
 Connected the backend to MongoDB using Mongoose
 Successfully stored validated product data, including image paths
 
+### Milestone 11: Dynamic Product Card
+In this milestone, we will:
+
+Create an API Endpoint
+
+Write a backend endpoint to extract and send product data from MongoDB.
+Fetch Data on the Frontend
+
+Receive product data in the frontend and dynamically display it using the existing Product card component.
+Update Multer.js
+
+Make necessary adjustments to Multer.js for handling product images properly.
+Dynamically Display Products
+
+Ensure that newly created products are dynamically added to the home page.
+View Data on the Main Page
+
+Verify that product data is properly displayed and accessible from the main page.
+
 
