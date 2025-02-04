@@ -179,4 +179,21 @@ View Data on the Main Page
 
 Verify that product data is properly displayed and accessible from the main page.
 
+### Milestone 12: Dynamic Filtering
+
+
+In this Milestone,
+
+
+
+To write an endpoint that will send data by filtering with my mail and send data from mongodb.
+
+To receive data at frontend -How to display that data dynamically using product card created earlier.
+
+The user can give their email, and the products from that email can be seen.
+
+We create a new page myProducts to show the products of the user.
+
+We update product.js in the backend to create,save and show the product.
+
 
