@@ -179,7 +179,7 @@ View Data on the Main Page
 
 Verify that product data is properly displayed and accessible from the main page.
 
-### Milestone 12: Dynamic Filtering
+###      Milestone 12: Dynamic Filtering
 
 
 In this Milestone,
