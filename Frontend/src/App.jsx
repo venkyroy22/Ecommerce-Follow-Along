@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import CreateProduct from './pages/createProduct';
 import MyProducts from './pages/myProducts';
 import "./App.css";
+import Cart from "./pages/cart.jsx";
 
 const App = () => {
   return (
@@ -15,8 +16,9 @@ const App = () => {
         <Route path='/login' element={<LoginPage />} />
         <Route path='/signup' element={<SignupPage />} />
         <Route path='/create-product' element={<CreateProduct />} />
-        <Route path='/myProducts' element={<MyProducts />} />
+        <Route path='/my-products' element={<MyProducts />} />
         <Route path='/create-product/:id' element={<CreateProduct />} />
+        <Route path='/cart/' element={<Cart/>} />
       </Routes>
     </BrowserRouter>
   );
