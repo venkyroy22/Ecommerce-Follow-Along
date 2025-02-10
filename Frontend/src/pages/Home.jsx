@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Product from "../components/auth/Product";
 import Nav from "../components/auth/nav";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const [products, setProducts] = useState([]);
@@ -43,7 +44,9 @@ export default function Home() {
         <h1 className="text-3xl text-center text-white py-6">Product Gallery</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 p-4">
           {products.map((product) => (
-            <Product key={product._id} {...product} />
+            <Link key={product._id} to={`/product-details/${product._id}`}>
+            <Product {...product} />
+          </Link>
           ))}
         </div>
       </div>
