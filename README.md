@@ -237,3 +237,10 @@ In this Milestone,
 Create an product info page that display all the product data and choose quantity and add to card button.
 New page to display each product.
 Adding quantity and add to card button.
+
+### Milestone 17: Adding to the Products to the Cart
+
+
+In this Milestone,
+
+Creating a function to add the products to the Cart.
