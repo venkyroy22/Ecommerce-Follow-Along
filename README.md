@@ -249,3 +249,13 @@ Creating a function to add the products to the Cart.
 ### Milestone 18: Creating the Backend endpoint
 
 Create an Backend endpoint for the cart page. We will write the backend logic to fetch all the products inside user cart to display in cart page.
+
+### Milestone 19: Cart Page
+
+In this Milestone,
+
+Create an cart page that display the products inside cart using endpoint that we used in the previous milestone.
+Adding + and - buttons to increase or decrease the quantity of the products.
+Also write an endpoint to increase and decrease the quantity.
+Creating cart frontend page and display the products.
+Using PUT method to update the data.
