@@ -8,6 +8,7 @@ import MyProducts from './pages/myProducts';
 import "./App.css";
 import Cart from "./pages/cart.jsx";
 import ProductDetails from './pages/productDetails.jsx';
+import Profile from './pages/profile.jsx';
 
 const App = () => {
   return (
@@ -20,7 +21,8 @@ const App = () => {
         <Route path='/my-products' element={<MyProducts />} />
         <Route path='/create-product/:id' element={<CreateProduct />} />
         <Route path='/cart/' element={<Cart/>} />
-        <Route path='/product-details/:id' element={<ProductDetails />} /> 
+        <Route path='/product-details/:id' element={<ProductDetails />} />
+        <Route path="/profile" element={<Profile />} /> 
       </Routes>
     </BrowserRouter>
   );

@@ -259,3 +259,10 @@ Adding + and - buttons to increase or decrease the quantity of the products.
 Also write an endpoint to increase and decrease the quantity.
 Creating cart frontend page and display the products.
 Using PUT method to update the data.
+
+### Milestone 20: Profile Page
+In this Milestone,
+
+Create and backend endpoint that will send all the user data using mail.
+Create an frontend profile page that will display all the user data.
+Display profile photo, name, mail and addresses.
