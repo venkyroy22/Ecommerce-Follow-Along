@@ -9,6 +9,8 @@ import "./App.css";
 import Cart from "./pages/cart.jsx";
 import ProductDetails from './pages/productDetails.jsx';
 import Profile from './pages/profile.jsx';
+import CreateAddress from './pages/createAddress.jsx';
+
 
 const App = () => {
   return (
@@ -22,7 +24,8 @@ const App = () => {
         <Route path='/create-product/:id' element={<CreateProduct />} />
         <Route path='/cart/' element={<Cart/>} />
         <Route path='/product-details/:id' element={<ProductDetails />} />
-        <Route path="/profile" element={<Profile />} /> 
+        <Route path="/profile" element={<Profile />} />
+        <Route path='/create-address' element={<CreateAddress />} /> 
       </Routes>
     </BrowserRouter>
   );
