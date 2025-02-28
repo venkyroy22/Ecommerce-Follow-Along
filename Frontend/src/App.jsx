@@ -10,6 +10,7 @@ import Cart from "./pages/cart.jsx";
 import ProductDetails from './pages/productDetails.jsx';
 import Profile from './pages/profile.jsx';
 import CreateAddress from './pages/createAddress.jsx';
+import SelectAddress from './pages/SelectAddress.jsx';
 
 
 const App = () => {
@@ -25,7 +26,8 @@ const App = () => {
         <Route path='/cart/' element={<Cart/>} />
         <Route path='/product-details/:id' element={<ProductDetails />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path='/create-address' element={<CreateAddress />} /> 
+        <Route path='/create-address' element={<CreateAddress />} />
+        <Route path='/select-address' element={<SelectAddress/>}/> 
       </Routes>
     </BrowserRouter>
   );
