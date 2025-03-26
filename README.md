@@ -321,3 +321,13 @@ Get the mail of the user using that you need to retrive the _id of the user.
 Use the _id to get all the orders of that user.
 Send all the users orders in the response.
 Also do Error management.
+
+### Milestone 27: My Orders page
+
+In this Milestone,
+
+Created an my-orders page
+Send an get request to my-orders endpoint that we created in previous milestone.
+We will send user mail in to endpoint to get all the user orders.
+Display all the user orders.
+We will add my-orders page in navbar for better navigation.
