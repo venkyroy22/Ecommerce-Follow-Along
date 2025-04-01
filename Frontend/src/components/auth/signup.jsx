@@ -3,8 +3,9 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { RxAvatar } from "react-icons/rx";
 import axios from "axios";
-import ValidationFormObject from "../../../validation";
-
+import ValidationFormObject from "../../validation.js";
+import { useDispatch } from 'react-redux';
+import { setemail } from "../../store/userAction.js";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -35,7 +36,7 @@ const Signup = () => {
     return Object.keys(newErrors).length === 0; // Return true if no errors
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     if (!validateFields()) {
@@ -56,22 +57,22 @@ const Signup = () => {
     };
 
     // Axios request to backend
-    try{
-      const response =await axios.post("http://localhost:8000/api/v2/user/create-user", newForm, config);
-      console.log(response);
-    }catch(error){
-      console.log(error);
-      console.error(error.response ? error.response.data : error.message); 
-    }
-    
+    axios
+      .post("http://localhost:8000/api/v2/user/create-user", newForm, config)
+      .then((res) => {
+        console.log(res.data); // Success response from server
+      })
+      .catch((err) => {
+        console.error(err.response ? err.response.data : err.message); // Error handling
+      });
   };
 
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <h2 className="hover:text-pink-500 mt-6 text-center text-3xl font-extrabold text-blue-500">
-          SignUp
+        <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+          Register as a new user
         </h2>
       </div>
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
@@ -80,7 +81,7 @@ const Signup = () => {
             <div>
               <label
                 htmlFor="name"
-                className="flex items-start block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-700"
               >
                 Full Name
               </label>
@@ -104,7 +105,7 @@ const Signup = () => {
             <div>
               <label
                 htmlFor="email"
-                className="flex items-start block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-700"
               >
                 Email address
               </label>
@@ -128,7 +129,7 @@ const Signup = () => {
             <div>
               <label
                 htmlFor="password"
-                className="flex items-start block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-gray-700"
               >
                 Password
               </label>
@@ -199,16 +200,16 @@ const Signup = () => {
             <div>
               <button
                 type="submit" onClick={handleSubmit}
-                className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-pink-500"
+                className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
               >
-                SignUp
+                Submit
               </button>
             </div>
 
             <div className="flex items-center w-full">
               <h4>Already have an account?</h4>
-              <Link to="/login" className="hover:text-pink-500 hover:underline text-blue-600 pl-2">
-                Login
+              <Link to="/login" className="text-blue-600 pl-2">
+                Sign In
               </Link>
             </div>
           </form>
