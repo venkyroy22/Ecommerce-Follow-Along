@@ -331,3 +331,20 @@ Send an get request to my-orders endpoint that we created in previous milestone.
 We will send user mail in to endpoint to get all the user orders.
 Display all the user orders.
 We will add my-orders page in navbar for better navigation.
+
+### Milestone 28: Cancel the placed orders
+In this Milestone,
+
+In my-orders page for every order add cancel order button.
+If the order is already canceled this button should not be displayed.
+Create an endpoint that will receive the order-id.
+Get the order using this id and mark the status canceled and save.
+We update the order.js controller to update the changes.
+
+### Milestone 29: Payment
+In this Milestone,
+
+Using PayPal API in our program.
+Integrating online payments.
+Making sure it works without errors.
+
