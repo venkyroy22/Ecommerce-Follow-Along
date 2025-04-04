@@ -363,3 +363,18 @@ In this Milestone,
 Using redux for global state management.
 Implementing redux store to store all global states.
 Installing Redux and using it fro email in Signup and Login.
+
+
+### Milestone 32: REDUX
+In this Milestone,
+
+Use redux to store the state and access in all the pages.
+Use Dispatch method to store the mail inside global state.
+Save the the mail stored in global state using useSelector.
+
+### Milestone 33: COOKIE AND JWT
+In this Milestone,
+
+Create an JWT token.
+Storing the tokens inside the cookie.
+Adding the cookie inside the response.
